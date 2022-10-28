@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane id="view" fx:id="view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="opciones" fx:id="ajustesB" mnemonicParsing="false" stylesheets="@../Estilos/MainMenu.css">
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="16.0">
+                     <image>
+                        <Image url="@../Images/configuraciones.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <ToggleButton id="sonido" fx:id="sonidoB" mnemonicParsing="false" stylesheets="@../Estilos/MainMenu.css">
+               <graphic>
+                  <ImageView id="imagenSonido" fx:id="imagenSonido" fitHeight="16.0" fitWidth="16.0">
+                     <image>
+                        <Image url="@../Images/musica.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+         </children>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Logo.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Button id="botonesPrincipales" fx:id="nuevaPartidaB" mnemonicParsing="false" stylesheets="@../Estilos/MainMenu.css" text="Nuevo Juego" />
+            <Button id="botonesPrincipales" fx:id="howPlayB" mnemonicParsing="false" stylesheets="@../Estilos/MainMenu.css" text="Como Jugar" />
+         </children>
+      </VBox>
+   </center>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</BorderPane>
